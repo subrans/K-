@@ -1,0 +1,10 @@
+USE stocks;
+CREATE TABLE `stockindex` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`code` CHAR(4) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`name` VARCHAR(32) NOT NULL COLLATE 'utf8mb4_unicode_ci',
+	`updated_at` TIMESTAMP NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8mb4_unicode_ci'
+ENGINE=InnoDB;

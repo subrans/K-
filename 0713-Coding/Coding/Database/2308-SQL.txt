@@ -1,0 +1,13 @@
+USE stocks;
+CREATE TABLE `2308` (
+	`date` date NOT NULL,
+  	`open` float NOT NULL,
+  	`high` float NOT NULL,
+  	`low` float NOT NULL,
+	`close` float NOT NULL,
+  	`turnover` bigint(20) NOT NULL,
+	`updated_at` TIMESTAMP NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+	PRIMARY KEY (`date`)
+)
+COLLATE='utf8mb4_unicode_ci'
+ENGINE=InnoDB;
